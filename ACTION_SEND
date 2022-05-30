@@ -1,0 +1,11 @@
+Button(
+  onClick={
+    val intent = Intent()
+    intent.action=Intent.ACTION_SEND
+    intent.putExtra(Intent.EXTRA_TEXT,"lalalaa")
+    intent.type="text/plain"
+    startActivity(Intent.createChooser(intent, "gegegegeg"))
+  }
+){
+  Text(text="share")
+}
