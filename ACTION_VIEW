@@ -1,0 +1,10 @@
+val context = LocalContext.current
+val intent = remember { Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/"))}
+ 
+NavigationItem(
+  resId = R.drawable.ic_baseline_message_24,
+  text = "Rating",
+  itemClicked = {
+    context.startActivity(intent)
+  }
+)
