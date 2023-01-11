@@ -1,5 +1,6 @@
 val context = LocalContext.current
 val intent = remember { Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/"))}
+intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
  
 NavigationItem(
   resId = R.drawable.ic_baseline_message_24,
