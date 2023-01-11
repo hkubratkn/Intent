@@ -4,6 +4,7 @@ Button(
     intent.action=Intent.ACTION_SEND
     intent.putExtra(Intent.EXTRA_TEXT,"lalalaa")
     intent.type="text/plain"
+    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
     startActivity(Intent.createChooser(intent, "gegegegeg"))
   }
 ){
